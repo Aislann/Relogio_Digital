@@ -17,3 +17,19 @@ const relogio = setInterval(function time() {
   milisegundos.textContent = milisegundo
 
 });
+
+///Constante para a data
+const dataSpan = document.getElementById('dataSpan');
+
+function atualizarData() {
+  const dataAtual = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const dataFormatada = dataAtual.toLocaleDateString('pt-BR', options);
+  dataSpan.textContent = dataFormatada;
+}
+
+// Função para exibir a data inicialmente
+atualizarData();
+
+// Atualiza a data a cada segundo
+setInterval(atualizarData, 1000);
