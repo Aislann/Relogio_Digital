@@ -1,0 +1,15 @@
+#data {
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  #dataSpan {
+    text-transform: uppercase; /* Transformar o texto todo em letras maiúsculas */
+  }
