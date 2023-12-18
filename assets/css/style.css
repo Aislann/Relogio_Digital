@@ -22,6 +22,7 @@ body{
     justify-content: space-around;
     height: 200px;
     width: 600px;
+    /* width: 60%; */
     background: transparent;
     border-radius: 15px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0,0, 0.2);
@@ -30,6 +31,7 @@ body{
 #relogio div{ /* Estilizar as div filhas*/
     height: 170px;
     width: 150px;
+    /* width: 25%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,3 +72,27 @@ body{
     font-size: 25px;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+
+    }
+  
+    #relogio {
+      margin-top: 80px;
+      width: 90%;
+    }
+
+    #relogio div{ 
+        width: 25%;
+        height: 70%;
+    }
+
+    #relogio span{
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    #relogio #milisegundos{
+        font-size: 15px;
+    }
+  }
